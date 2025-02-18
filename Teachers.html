@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة المعلم</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Fixed Header -->
+  <header class="header">
+    <a href="#" class="logo">المنصة</a>
+    <nav class="navbar">
+      <a href="index.html">الصفحة الرئيسية</a>
+      <a href="index.html#opinions">آراء الطلبة</a>
+      <a href="index.html#login" class="btn">تسجيل الخروج</a>
+    </nav>
+  </header>
+
+  
+  
+
+    <!-- Bottom Section: Add Lesson and View Grades -->
+    <section class="add-lesson">
+<!-- 
+      <div class="wrapper">
+        <div class="foem-box login">
+        <div class="avatar"><img src="images/image1.png" alt=""></div>
+        <form>
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-user-circle'></i></span>
+            <input type="text"  required>
+            <label>اسم المستخدم</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+            <input type="password"  required>
+            <label>كلمة المرور</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-envelope' ></i></span>
+            <input type="email" required>
+            <label>البريد الإلكتروني</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><i class='bx bxs-phone-call' ></i></span>
+            <input type="text" required>
+            <label>رقم الهاتف</label>
+          </div>
+         
+          
+          <div class="radio-buttons"> 
+            <label>
+              <a href="Students.html">
+                  <input type="radio" name="role" value="student"></a> طالب
+              </label>
+            <label>
+              <a href="Teachers.html">
+                  <input type="radio" name="role" value="teacher"></a> معلم
+              </label>
+          </div>
+          <button type="submit" class="btn">تسجيل الدخول</button>
+        </form>
+      </div></div> -->
+      
+      <div class="teacher-lessons">
+        <!-- Add Lesson -->
+        <div class="action-card">
+          <h2>إضافة درس</h2>
+          <form class="add-lesson-form">
+
+            <div class="input-box">
+              <select id="course" name="course">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <label for="course">اختر الدورة:</label>
+              </select>
+            </div>
+            <div class="input-box">
+              <input type="text"  required>
+              <label>عنوان الدرس</label>
+            </div>
+
+            <div class="input-box">
+              <textarea  required></textarea>
+              <label >وصف الدرس</label>
+            </div>
+
+
+            <div class="input-box">
+              
+              <input type="file" id="lesson-file" accept=".pdf,.doc,.docx"  required>
+            </div>
+
+            <button type="submit" class="btn">إضافة الدرس</button>
+          </form>
+        </div>
+    </section>
+
+      <!-- View Student Grades -->
+      <section class="display-grades">
+        <div class="action-card">
+          <h2>عرض درجات الطلبة</h2>
+          <div class="grades-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>اسم الطالب</th>
+                  <th>الدرجة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>محمد أحمد</td>
+                  <td>95</td>
+                </tr>
+                <tr>
+                  <td>فاطمة علي</td>
+                  <td>88</td>
+                </tr>
+                <tr>
+                  <td>علي حسن</td>
+                  <td>92</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      </section>
+ 
+</body>
+</html>
